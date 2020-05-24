@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e40769b3-c5e7-42c9-8e17-166eefa6fb2b" name="Default Changelist" comment="" />
+    <list default="true" id="e40769b3-c5e7-42c9-8e17-166eefa6fb2b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Okey/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Okey/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Okey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Okey/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/TileGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/TileGenerator.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/RemainsView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,17 +73,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/FlipAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/FontSizeAdjuster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sort/Joker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Core/TileGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sort/TileGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TileDragHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TileView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TileHolder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/BoardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/View.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/TileGenerator.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1c4uAHFIN5OctHOvyYYvbZmgzV3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -86,6 +94,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -123,6 +132,7 @@
       <workItem from="1590284276893" duration="4000" />
       <workItem from="1590284311394" duration="3000" />
       <workItem from="1590284362046" duration="385000" />
+      <workItem from="1590286626676" duration="77000" />
     </task>
     <servers />
   </component>

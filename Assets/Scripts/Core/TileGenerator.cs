@@ -30,6 +30,11 @@ public class TileGenerator
             allSet.Add(i);
         }
 
+        indicator = CustomJoker(customIndicatorId);
+        // it is representative we did FETCH a joker from currentList
+        int jokerNumber = (indicator.Number + 1) % 13;
+        jokerId = TileMath.NumberAndColorToId(jokerNumber, indicator.TileColor);
+        
         for (int i = 0; i < ids.Count; i++)
         {
             int selectedIndex = ids[i];
@@ -42,10 +47,7 @@ public class TileGenerator
                 currentTile.IsItJoker = true;
             }
         }
-        indicator = CustomJoker(customIndicatorId);
-        // it is representative we did FETCH a joker from currentList
-        int jokerNumber = (indicator.Number + 1) % 13;
-        jokerId = TileMath.NumberAndColorToId(jokerNumber, indicator.TileColor);
+       
         ids.Add(customIndicatorId);
         ids.Sort();
         for (int i = ids.Count-1; i >= 0; i--)
