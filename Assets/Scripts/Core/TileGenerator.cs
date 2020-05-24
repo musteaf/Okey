@@ -16,7 +16,6 @@ public class TileGenerator
             allSet.Add(i);
         }
         indicator = RollJoker();
-        // it is representative we did FETCH a joker from currentList
         int jokerNumber = (indicator.Number + 1) % 13;
         jokerId = TileMath.NumberAndColorToId(jokerNumber, indicator.TileColor);
     }
@@ -31,7 +30,6 @@ public class TileGenerator
         }
 
         indicator = CustomJoker(customIndicatorId);
-        // it is representative we did FETCH a joker from currentList
         int jokerNumber = (indicator.Number + 1) % 13;
         jokerId = TileMath.NumberAndColorToId(jokerNumber, indicator.TileColor);
         
@@ -41,7 +39,6 @@ public class TileGenerator
             Tile currentTile = new Tile(allSet[selectedIndex], TileMath.IdToColor(allSet[selectedIndex]),
                 TileMath.IdToNumber(allSet[selectedIndex]));
             firstHand.Add(currentTile);
-            //if (tiles[i].Id == jokerId || TileMath.GetOtherIdOfSameTile(tiles[i].Id) == jokerId)
             if (currentTile.Id == jokerId || TileMath.GetOtherIdOfSameTile(jokerId) == currentTile.Id)
             {
                 currentTile.IsItJoker = true;
@@ -71,7 +68,6 @@ public class TileGenerator
             Tile currentTile = new Tile(allSet[selectedIndex], TileMath.IdToColor(allSet[selectedIndex]),
                 TileMath.IdToNumber(allSet[selectedIndex]));
             currentSet.Add(currentTile);
-            //if (tiles[i].Id == jokerId || TileMath.GetOtherIdOfSameTile(tiles[i].Id) == jokerId)
             if (currentTile.Id == jokerId || TileMath.GetOtherIdOfSameTile(jokerId) == currentTile.Id)
             {
                 currentTile.IsItJoker = true;
@@ -95,7 +91,6 @@ public class TileGenerator
         int selectedIndex = id;
         Tile currentTile = new Tile(allSet[selectedIndex], TileMath.IdToColor(allSet[selectedIndex]),
             TileMath.IdToNumber(allSet[selectedIndex]));
-        //allSet.RemoveAt(selectedIndex);
         return currentTile;
     }
 

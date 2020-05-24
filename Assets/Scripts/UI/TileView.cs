@@ -78,11 +78,10 @@ public class TileView : ImageView
         image.enabled = true;
     }
 
-    public void DistributionAnimation(Vector2 targetPosition, int slot)
+    public void DistributionAnimation(Vector2 targetPosition, Vector2 startPosition, int slot)
     {
         slotPos = slot;
-        int y = (Screen.height / 2);
-        movementAnimation.StartAnimation(new Vector2( 0,y), targetPosition, targetPosition);
+        movementAnimation.StartAnimation(startPosition, targetPosition, targetPosition);
     }
     public void UpdatePosition(Vector2 targetPosition, int slot)
     {

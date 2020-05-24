@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Vector2 = UnityEngine.Vector2;
 
 public class TileHolder : MonoBehaviour
 {
@@ -133,8 +135,11 @@ public class TileHolder : MonoBehaviour
     IEnumerator DistributionAnimation(float s, TileView tileView, int position)
     {
         yield return new WaitForSeconds(s);
+        int y = (Screen.height / 2);
+        Vector2 startPosition = new Vector2(0, y);
+        tileView.MoveTargetPosition(startPosition);
         tileView.Show();
-        tileView.DistributionAnimation(tilePositions[position], position);
+        tileView.DistributionAnimation(tilePositions[position],startPosition, position);
         distributedTiles++;
     }
 
